@@ -35,7 +35,8 @@
       "middlewares": ["./middlewares"],
       "db": ["./db"],
       "app": ["./app"],
-      "regex": ["./regex"]
+      "regex": ["./regex"],
+      "utils": ["./utils"]
     }
   }
 }
