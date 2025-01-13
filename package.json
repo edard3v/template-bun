@@ -5,7 +5,7 @@
   "scripts": {
     "start": "bun run index.ts",
     "dev": "bun --watch run index.ts",
-    "build": "bun build index.ts --outdir dist",
+    "build": "bun build index.ts --outdir dist --target bun",
     "db": "bun run generate && bun run migrate",
     "generate": "sh src/db/generate.sh",
     "migrate": "sh src/db/migrate.sh",
@@ -26,10 +26,13 @@
   "dependencies": {
     "@hono/zod-validator": "^0.4.2",
     "@libsql/client": "0.14.0",
+    "aws-sdk": "2.1692.0",
     "bcrypt": "5.1.1",
     "drizzle-orm": "0.38.3",
     "hono": "4.6.16",
     "jsonwebtoken": "9.0.2",
+    "mock-aws-s3": "4.0.2",
+    "nock": "13.5.6",
     "nodemailer": "6.9.16",
     "zod": "3.24.1"
   }
