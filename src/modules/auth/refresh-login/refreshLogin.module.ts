@@ -1,10 +1,10 @@
 import { verifyAuth } from "middlewares/verifyAuth.middleware";
 import { Hono } from "hono";
-import { reLoginService } from "./relogin.service";
+import { refreshLoginService } from "./refreshLogin.service";
 
-export const reloginModule = new Hono();
+export const refreshLoginModule = new Hono();
 
-reloginModule.post(
+refreshLoginModule.post(
   "",
 
   verifyAuth,
@@ -12,7 +12,7 @@ reloginModule.post(
   // Controller
   async (context) => {
     const tokenPayload = context.get("tokenPayload");
-    const newToken = reLoginService(tokenPayload);
+    const newToken = refreshLoginService(tokenPayload);
     return context.json({ token: newToken });
   }
 );
