@@ -10,9 +10,9 @@ export const verifyAuth: MiddlewareHandler<T> = async (context, next) => {
   const token = Authorization.split(" ").at(1);
   if (!token) throw new Unauthorized();
 
-  const decoded = JWT.verify(token) as JwtPayload;
+  const tokenPayload = JWT.verify(token) as JwtPayload;
 
-  context.set("tokenPayload", decoded);
+  context.set("tokenPayload", tokenPayload);
 
   await next();
 };
