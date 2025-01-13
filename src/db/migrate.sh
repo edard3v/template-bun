@@ -2,7 +2,7 @@
 rm -rf src/db/template.db
 
 # Sincroniza la migración con la db
-bunx drizzle-kit migrate
+bun drizzle-kit migrate
 
 # Envia los cambios del schema directo a la db
-# npx drizzle-kit push
+# bun drizzle-kit push

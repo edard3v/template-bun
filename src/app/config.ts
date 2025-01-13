@@ -1,2 +1,2 @@
-export const PORT = Bun.env.PORT;
-export const IS_PRODUCTION = Bun.env.ENV === "production";
+export const PORT = process.env.PORT;
+export const IS_PRODUCTION = process.env.ENV === "production";

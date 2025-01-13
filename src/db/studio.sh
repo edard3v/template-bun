@@ -1,2 +1,2 @@
 # 
-bunx drizzle-kit studio
+bun drizzle-kit studio

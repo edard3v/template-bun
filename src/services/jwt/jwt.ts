@@ -3,7 +3,7 @@ import jwt, { type SignOptions } from "jsonwebtoken";
 import { TokenErr } from "../../errors/Token.err.ts";
 
 export class JWT {
-  static secret = Bun.env.SECRET_JWT;
+  static secret = process.env.SECRET_JWT;
   static expiresIn = "1w";
   static expiresInRegister = "30m";
 

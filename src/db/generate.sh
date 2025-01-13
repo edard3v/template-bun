@@ -2,4 +2,4 @@
 rm -rf src/db/migrations
 
 # Genera una nueva migración
-bunx drizzle-kit generate
+bun drizzle-kit generate

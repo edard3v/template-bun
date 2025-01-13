@@ -1,9 +1,11 @@
-import { drizzle } from "drizzle-orm/bun-sqlite";
-import { Database } from "bun:sqlite";
-import * as schemas from "./schemas.ts";
+import { drizzle } from "drizzle-orm/libsql";
+import * as schemas from "./schemas";
 // import * as relations from "./relations";
 
-const db = new Database();
-export const orm = drizzle(db, {
+export const db = drizzle({
+  connection: {
+    url: process.env.TURSO_DATABASE_URL,
+    authToken: process.env.TURSO_AUTH_TOKEN,
+  },
   schema: { ...schemas },
 });
