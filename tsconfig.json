@@ -28,7 +28,14 @@
 
     "baseUrl": "./src",
     "paths": {
-      "errors": ["./errors"]
+      "errors": ["./errors"],
+      "services": ["./services"],
+      "zod-schemas": ["./zod-schemas"],
+      "modules": ["./modules"],
+      "middlewares": ["./middlewares"],
+      "db": ["./db"],
+      "app": ["./app"],
+      "regex": ["./regex"]
     }
   }
 }

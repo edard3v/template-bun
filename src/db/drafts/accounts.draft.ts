@@ -1,5 +1,5 @@
+import { Role } from "db/schemas";
 import { Encrypt } from "services/encrypt/encrypt";
-import { Role } from "../schemas";
 
 export const ACCOUNTS = [
   {

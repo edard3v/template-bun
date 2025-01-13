@@ -1,4 +1,4 @@
-// import { z } from "zod";
-// import { Role } from "../db/schemas";
+import { Role } from "db/schemas";
+import { z } from "zod";
 
-// export const roleSchema = z.nativeEnum(Role);
+export const roleSchema = z.nativeEnum(Role);
