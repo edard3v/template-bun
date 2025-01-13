@@ -14,8 +14,6 @@ startRegisterModule.post(
   async (context) => {
     const credentials = context.req.valid("json");
     await startRegisterService(credentials);
-    return context.json({
-      msg: "Email de verificación enviando correctamente.",
-    });
+    return context.text("Email de verificación enviando correctamente.");
   }
 );
