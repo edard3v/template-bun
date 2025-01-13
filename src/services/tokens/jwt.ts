@@ -5,7 +5,6 @@ import { TokenErr } from "../../errors/Token.err.ts";
 export class JWT {
   static secret = process.env.SECRET_JWT;
   static expiresIn = "1w";
-  static expiresInRegister = "30m";
 
   static verify(token: string) {
     if (!this.secret) throw new TypeError("Se requiere un SECRET (.env)");

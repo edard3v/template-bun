@@ -2,6 +2,7 @@ declare module "bun" {
   interface Env {
     PORT: string;
     ENV: string;
+    API_BASE_URL: string;
 
     SECRET_JWT: string;
 

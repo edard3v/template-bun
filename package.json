@@ -25,13 +25,14 @@
     "typescript": "5.0.0"
   },
   "dependencies": {
-    "figlet": "1.8.0",
+    "@hono/zod-validator": "^0.4.2",
+    "@libsql/client": "0.14.0",
     "bcrypt": "5.1.1",
+    "drizzle-orm": "0.38.3",
+    "figlet": "1.8.0",
+    "hono": "4.6.16",
     "jsonwebtoken": "9.0.2",
     "nodemailer": "6.9.16",
-    "hono": "4.6.16",
-    "zod": "3.24.1",
-    "@libsql/client": "0.14.0",
-    "drizzle-orm": "0.38.3"
+    "zod": "3.24.1"
   }
 }
