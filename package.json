@@ -10,7 +10,8 @@
     "generate": "sh src/db/generate.sh",
     "migrate": "sh src/db/migrate.sh",
     "introspect": "sh src/db/introspect.sh",
-    "studio": "sh src/db/studio.sh"
+    "studio": "sh src/db/studio.sh",
+    "seed": "bun run src/db/seed.ts"
   },
   "devDependencies": {
     "@types/bcrypt": "5.0.2",
