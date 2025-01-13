@@ -5,7 +5,7 @@
   "scripts": {
     "start": "bun run index.ts",
     "dev": "bun --watch run index.ts",
-    "build": "bun build index.ts --outdir dist --target bun",
+    "build": "bun build index.ts --minify --outdir dist --target bun",
     "db": "bun run generate && bun run migrate",
     "generate": "sh src/db/generate.sh",
     "migrate": "sh src/db/migrate.sh",
