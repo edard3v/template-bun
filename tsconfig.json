@@ -38,5 +38,6 @@
       "regex": ["./regex"],
       "utils": ["./utils"]
     }
-  }
+  },
+  "exclude": ["node_modules", "dist", "build", "logs", "tmp"]
 }
