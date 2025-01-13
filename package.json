@@ -6,9 +6,10 @@
     "start": "bun run index.ts",
     "dev": "bun --watch run index.ts",
     "build": "bun build index.ts --outdir dist",
+    "db": "bun run generate && bun run migrate",
     "generate": "sh src/db/generate.sh",
-    "introspect": "sh src/db/introspect.sh",
     "migrate": "sh src/db/migrate.sh",
+    "introspect": "sh src/db/introspect.sh",
     "studio": "sh src/db/studio.sh"
   },
   "devDependencies": {

@@ -1,6 +1,8 @@
 declare module "bun" {
   interface Env {
     PORT: string;
+    ENV: string;
+
     SECRET_JWT: string;
 
     NODEMAILER_GMAIL: string;
@@ -8,7 +10,5 @@ declare module "bun" {
 
     TURSO_DATABASE_URL: string;
     TURSO_AUTH_TOKEN: string;
-
-    ENV: string;
   }
 }

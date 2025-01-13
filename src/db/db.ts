@@ -1,18 +1,18 @@
-import { drizzle } from "drizzle-orm/libsql";
-import { createClient } from "@libsql/client";
+import { drizzle } from "drizzle-orm/bun-sqlite";
+import { Database } from "bun:sqlite";
 import * as schemas from "./schemas.ts";
-import { IS_PRODUCTION } from "app/config.ts";
 // import * as relations from "./relations";
 
-export const CONFIG_DB = {
-  url: !IS_PRODUCTION
-    ? "file:./src/db/template.db"
-    : Bun.env.TURSO_DATABASE_URL,
-  authToken: Bun.env.TURSO_AUTH_TOKEN,
-};
-
-const client = createClient(CONFIG_DB);
-
-export const db = drizzle(client, {
+const db = new Database();
+export const orm = drizzle(db, {
   schema: { ...schemas },
 });
+
+// export const CONFIG_DB = {
+//   url: !IS_PRODUCTION
+//     ? "file:./src/db/template.db"
+//     : Bun.env.TURSO_DATABASE_URL,
+//   authToken: Bun.env.TURSO_AUTH_TOKEN,
+// };
+
+// const client = createClient(CONFIG_DB);

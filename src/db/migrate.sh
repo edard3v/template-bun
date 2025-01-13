@@ -1,4 +1,5 @@
-#!/bin/bash
+# Elimina la db
+rm -rf src/db/template.db
 
 # Sincroniza la migración con la db
 bunx drizzle-kit migrate
