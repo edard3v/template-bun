@@ -24,7 +24,7 @@
     "typescript": "5.0.0"
   },
   "dependencies": {
-    "@hono/zod-validator": "^0.4.2",
+    "@hono/zod-validator": "0.4.2",
     "@libsql/client": "0.14.0",
     "aws-sdk": "2.1692.0",
     "bcrypt": "5.1.1",
