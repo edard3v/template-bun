@@ -1,15 +1,11 @@
-# bun
+# template-bun
 
-To install dependencies:
+- Fije variables de entorno, tome como ejemplo la declaración Env en env.d.ts
+- Fije la ruta local en drizzle.config.ts
+- Genere y migre la db con ` bun run db`
+- Instale dependencias con `bun i`
+- `bun dev`
 
-```bash
-bun install
-```
+Este proyecto fue creado utilizando bun init en Bun v1.1.43. Bun es un entorno de ejecución de JavaScript rápido y todo en uno.
 
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.1.43. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+https://bun.sh
